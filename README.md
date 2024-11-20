@@ -68,10 +68,10 @@ src/
 
 Key parameters:
 
-**image**: Image to process
-**label**: GUI display element
-**squareSize**: Block size
-**startY/endY**: Section boundaries
+    **image**: Image to process
+    **label**: GUI display element
+    **squareSize**: Block size
+    **startY/endY**: Section boundaries
 
 3. [DisplayUtils](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/utils/DisplayUtils.java) handles the GUI display:
     1. Scales image
