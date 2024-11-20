@@ -1,8 +1,6 @@
-noy 20, 2024 2:56:41 PM Main main
-INFO: Starting multi-threaded processing
-noy 20, 2024 2:56:41 PM Main main
-INFO: Using 8 threads
-noy 20, 2024 4:34:47 PM Main main
-INFO: Starting multi-threaded processing
-noy 20, 2024 4:34:47 PM Main main
-INFO: Using 8 threads
+noy 20, 2024 6:17:24 PM src.Main main
+SEVERE: Error in main
+java.io.FileNotFoundException: Image file not found: monalisa.jpg
+	at src.utils.ImageUtils.loadImage(ImageUtils.java:12)
+	at src.Main.main(Main.java:22)
+
