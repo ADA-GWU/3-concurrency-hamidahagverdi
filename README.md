@@ -114,8 +114,9 @@ Key parameters:
 ## Requirements for running
 
 1. Java Development Kit (JDK) 8 or higher.
-2. Minimum 2GB RAM (recommended).
-3. Graphics support for GUI display.
+2. Make sure Java is properly installed and added to system PATH (so you can run `java` and `javac` commands from terminal).
+3. Minimum 2GB RAM (recommended).
+4. Graphics support for GUI display.
 
 ## Installation & Run
 
