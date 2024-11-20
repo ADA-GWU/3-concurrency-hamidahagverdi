@@ -35,8 +35,9 @@ cd 3-concurrency-hamidahagverdi
 ```
 2. Compile the Java file:
 ```
-# Compile
-javac -d out src/**/*.java
+# Create output directory and compile
+mkdir out
+javac -d out src/Main.java src/models/*.java src/utils/*.java
 ```
 3. Run the compiled program:
 ```
