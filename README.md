@@ -60,9 +60,9 @@ Example input:
 ```
 resources/images/monalisa.jpg 20 S
 ```
-resources/images/monalisa.jpg - Image file path
-20 - Pixel averaging block size
-M - Processing mode:
+- resources/images/monalisa.jpg - Image file path
+- 20 - Pixel averaging block size
+- M - Processing mode:
 
 ## Output
 
