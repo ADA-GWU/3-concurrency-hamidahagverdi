@@ -20,6 +20,7 @@ Smart Image Handling
 - Graphics support for GUI display
 
 ## Project Structure
+```
 src/
 ├── Main.java                 # Application entry point
 ├── models/
@@ -29,7 +30,7 @@ src/
     ├── ImageUtils.java       # Image operations
     ├── LoggerUtils.java      # Logging system
     └── ThreadUtils.java      # Thread management
-
+```
 ## Installation
 
 1. Clone the repository:
