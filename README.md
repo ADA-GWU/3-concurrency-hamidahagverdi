@@ -36,27 +36,27 @@ src/
 
 [Main](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/Main.java) class - core application flow:
 
-Input Handling:
-Validates 3 arguments: filename, square size, mode (S/M)
-Loads image using ImageUtils
+1. Input Handling:
+- Validates 3 arguments: filename, square size, mode (S/M)
+- Loads image using ImageUtils
 
-Screen Adaptation:
-Checks if image bigger than screen
-Resizes if needed while maintaining aspect ratio
+2. Screen Adaptation:
+- Checks if image bigger than screen
+- Resizes if needed while maintaining aspect ratio
 
-Display Setup:
-Creates GUI window
-Shows initial image
+3. Display Setup:
+- Creates GUI window
+- Shows initial image
 
-Processing:
-Single-thread (S): Processes full image in one thread
-Multi-thread (M): Divides image for parallel processing
-Uses ImageProcessor for actual processing
+4. Processing:
+- Single-thread (S): Processes full image in one thread
+- Multi-thread (M): Divides image for parallel processing
+- Uses ImageProcessor for actual processing
 
-Error Handling:
-Catches exceptions
-Logs errors
-Shows user-friendly messages
+5. Error Handling:
+- Catches exceptions
+- Logs errors
+- Shows user-friendly messages
 
 Acts as program entry point, coordinates all components and manages workflow.
 
