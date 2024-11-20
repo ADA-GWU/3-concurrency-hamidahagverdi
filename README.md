@@ -59,10 +59,10 @@ Acts as program entry point, coordinates all components and manages workflow.
     1. Takes an image section (defined by startY to endY)
     2. Processes image in square blocks
         For each block:
-            1. Calculates average color
-            2. Fills block with that color
-            3. Saves progress
-            4. Updates display
+        - [x] Calculates average color
+        - [x] Fills block with that color
+        - [x] Saves progress
+        - [x] Updates display
 
 Implements Runnable for multi-threading support
 
