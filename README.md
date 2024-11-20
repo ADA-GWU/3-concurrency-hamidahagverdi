@@ -78,7 +78,7 @@ S: Single-threaded
 - Faster processing for larger images
 - Divides image into sections for parallel processing
 
+### Results
 
-##Results
 ![Original Image](resources/images/monalisa.jpg)
-![Processing Result](out/results.jpg)
+![Processing Result](result.jpg)
