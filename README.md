@@ -157,20 +157,18 @@ java -cp out src.Main resources/images/monalisa.jpg 20 M
 - `filename`: Path to your image file (e.g., "image.jpg")
 - `square_size`: Size of the averaging square in pixels (e.g., 20)
 - `mode`: Processing mode - 'S' for single-threaded or 'M' for multi-threaded
-
-Example for Single-Threaded mode:
-resources/images/monalisa.jpg 20 S
 ```
 - resources/images/monalisa.jpg - Image file path
 - 20 - Pixel averaging block size
 - S/M - Processing mode: Single-threaded/Multi-threaded Mode
+
+_**Example Input**_:
 ![Example Input](resources/images/example_input.jpg)
 
 ## Output
 - Processed image is saved as "result.jpg" in the working directory
 - Live preview is shown in a GUI window
 - Processing logs are written to "imageprocessor.log"
-
 
 ### Results
 
