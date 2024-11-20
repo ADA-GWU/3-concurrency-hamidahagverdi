@@ -35,22 +35,22 @@ src/
          -  Loads image using _ImageUtils_.
 
     2. **_Screen Adaptation_**:
-        - [x] Checks if image bigger than screen.
-        - [x] Resizes if needed while maintaining aspect ratio.
+        -  Checks if image bigger than screen.
+        -  Resizes if needed while maintaining aspect ratio.
 
     3. **_Display Setup_**:
-        - [x] Creates GUI window.
-        - [x] Shows initial image.
+        -  Creates GUI window.
+        -  Shows initial image.
 
     4. **_Processing_**:
-        - [x] _Single-thread (S)_: Processes full image in one thread.
-        - [x] _Multi-thread (M)_: Divides image for parallel processing.
-        - [x] Uses _ImageProcessor_ for actual processing.
+        -  _Single-thread (S)_: Processes full image in one thread.
+        -  _Multi-thread (M)_: Divides image for parallel processing.
+        -  Uses _ImageProcessor_ for actual processing.
 
     5. **_Error Handling_**:
-        - [x] Catches exceptions.
-        - [x] Logs errors.
-        - [x] Shows user-friendly messages.
+        -  Catches exceptions.
+        -  Logs errors.
+        -  Shows user-friendly messages.
 
 ** Acts as program entry point, coordinates all components and manages workflow.
 
@@ -59,10 +59,10 @@ src/
     1. Takes an image section (defined by startY to endY)
     2. Processes image in square blocks
         For each block:
-        - [x] Calculates average color
-        - [x] Fills block with that color
-        - [x] Saves progress
-        - [x] Updates display
+        -  Calculates average color
+        -  Fills block with that color
+        -  Saves progress
+        -  Updates display
 
 ** Implements Runnable for multi-threading support
 
