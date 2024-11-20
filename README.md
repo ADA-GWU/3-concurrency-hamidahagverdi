@@ -31,8 +31,8 @@ src/
 1. [Main](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/Main.java) class - core application flow:
 
     1. **_Input Handling_**:
-         - [x] Validates 3 arguments: _filename_, _square size_, _mode (S/M)_.
-         - [x] Loads image using _ImageUtils_.
+         -  Validates 3 arguments: _filename_, _square size_, _mode (S/M)_.
+         -  Loads image using _ImageUtils_.
 
     2. **_Screen Adaptation_**:
         - [x] Checks if image bigger than screen.
