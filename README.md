@@ -66,50 +66,50 @@ src/
 
 ** Implements Runnable for multi-threading support
 
-    Key parameters:
+Key parameters:
 
-    1. image: Image to process
-    2. label: GUI display element
-    3. squareSize: Block size
-    4. startY/endY: Section boundaries
+1. **image**: Image to process
+2. **label**: GUI display element
+3. **squareSize**: Block size
+4. **startY/endY**: Section boundaries
 
 3. [DisplayUtils](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/utils/DisplayUtils.java) handles the GUI display:
- 
-    - getScaledDimension: Calculates image size to fit screen (80% of screen size)
-    - createMainFrame: Creates window with proper layout & border
-    - updateDisplay: Updates display with current processing state:
-
     1. Scales image
     2. Updates GUI
     3. Triggers repaint
-Provides real-time visual feedback of image processing
+       
+    - **_getScaledDimension_**: Calculates image size to fit screen (80% of screen size)
+    - **_createMainFrame_**: Creates window with proper layout & border
+    - **_updateDisplay_**: Updates display with current processing state:
+
+**Provides real-time visual feedback of image processing
 
 4. [ImageUtils](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/utils/ImageUtils.java) provides core image handling functions:
-
-    - loadImage: Reads image file from disk
-    - saveImage: Saves processed image as JPG
-    - calculateAverageColor: Calculates average RGB color within a square region:
-
     1. Takes coordinates and size
     2. Sums R,G,B values
     3. Returns average color for that block
-Handles image I/O and color calculations for the pixel averaging process.
+       
+    - **_loadImage_**: Reads image file from disk
+    - **_saveImage_**: Saves processed image as JPG
+    - **_calculateAverageColor_**: Calculates average RGB color within a square region:
+
+**Handles image I/O and color calculations for the pixel averaging process.
 
 5. [LoggerUtils](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/utils/LoggerUtils.java) provides error logging functionality:
 
-    - Creates and configures a logger to write to "imageprocessor.log"
-    - Uses FileHandler for file output
-    - Formats log entries with SimpleFormatter
-    - Offers static getLogger() method for accessing logger throughout application
-Centralizes error tracking and debugging information.
+    1. Creates and configures a logger to write to _"imageprocessor.log"_
+    2.  Uses FileHandler for file output
+    3. Formats log entries with SimpleFormatter
+    4. Offers static _getLogger()_ method for accessing logger throughout application
+**Centralizes error tracking and debugging information.
 
 6. [ThreadUtils](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/utils/ThreadUtils.java) manages multi-threaded image processing:
 
     1. Gets number of available CPU cores
     2. Divides image into horizontal sections based on core count
     3. Creates thread for each section
-    4. Each thread processes its section independently using ImageProcessor
-Enables parallel processing for faster image manipulation.
+    4. Each thread processes its section independently using _ImageProcessor_
+**Enables parallel processing for faster image manipulation.
 
 ## Requirements for running
 
