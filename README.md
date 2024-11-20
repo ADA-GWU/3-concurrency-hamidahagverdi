@@ -71,7 +71,7 @@ resources/images/monalisa.jpg 20 S
 - Live preview is shown in a GUI window
 - Processing logs are written to "imageprocessor.log"
 
-## Processing Modes Explained
+## Processing Modes
 
 ### Single-threaded Mode (S)
 - Sequential top-to-bottom processing
