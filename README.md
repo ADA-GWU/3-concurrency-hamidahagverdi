@@ -83,6 +83,20 @@ Handles image I/O and color calculations for the pixel averaging process.
 - Offers static getLogger() method for accessing logger throughout application
 Centralizes error tracking and debugging information.
 
+[ThreadUtils](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/utils/ThreadUtils.java) manages multi-threaded image processing:
+
+1. Gets number of available CPU cores
+2. Divides image into horizontal sections based on core count
+3. Creates thread for each section
+4. Each thread processes its section independently using ImageProcessor
+Enables parallel processing for faster image manipulation.
+
+**Example calculation:
+With 4 cores and 1000px height:
+Thread 1: 0-250px
+Thread 2: 250-500px
+Thread 3: 500-750px
+Thread 4: 750-1000px
 
 ## Installation
 
