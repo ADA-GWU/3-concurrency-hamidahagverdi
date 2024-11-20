@@ -1,5 +1,4 @@
-# Image Processing Application
-
+# Image Processing Application with Concurrency
 A robust Java application that processes images by applying pixel averaging effects with support for both single-threaded and multi-threaded processing. The application provides real-time visual feedback of the processing through a graphical user interface.
 
 ## Features
@@ -29,25 +28,20 @@ A robust Java application that processes images by applying pixel averaging effe
 ## Installation
 
 1. Clone the repository:
-```bash
-git clone
 ```
-
+# Clone repository
+git clone https://github.com/ADA-GWU/3-concurrency-hamidahagverdi.git
+cd 3-concurrency-hamidahagverdi
+```
 2. Compile the Java file:
-```bash
-javac Main.java
 ```
-
-## Usage
-
-1. Run the compiled program:
-```bash
-java Main
+# Compile
+javac -d out src/**/*.java
 ```
-
-2. When prompted, enter the input in the following format:
+3. Run the compiled program:
 ```
-filename square_size mode
+#Usage
+java -cp out src.Main resources/images/monalisa.jpg 20 M
 ```
 
 Parameters:
@@ -57,8 +51,20 @@ Parameters:
 
 Example input:
 ```
-image.jpg 20 S
+resources/images/monalisa.jpg 20 S
 ```
+resources/images/monalisa.jpg - Input image path
+20 - Block size for processing
+M - Processing mode:
+
+M: Multi-threaded
+S: Single-threaded
+
+## Output
+
+- Processed image is saved as "result.jpg" in the working directory
+- Live preview is shown in a GUI window
+- Processing logs are written to "imageprocessor.log"
 
 ## Processing Modes Explained
 
@@ -72,8 +78,5 @@ image.jpg 20 S
 - Faster processing for larger images
 - Divides image into sections for parallel processing
 
-## Output
 
-- Processed image is saved as "result.jpg" in the working directory
-- Live preview is shown in a GUI window
-- Processing logs are written to "imageprocessor.log"
+Results
