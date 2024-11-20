@@ -14,9 +14,13 @@ public class ImageUtils {
         return ImageIO.read(file);
     }
 
-    public static void saveImage(BufferedImage image, String fileName) throws IOException {
-        ImageIO.write(image, "jpg", new File(fileName));
+public static void saveImage(BufferedImage image, String fileName) throws IOException {
+    File outputDir = new File("output");
+    if (!outputDir.exists()) {
+        outputDir.mkdirs();
     }
+    ImageIO.write(image, "jpg", new File(outputDir, fileName));
+}
 
     public static Color calculateAverageColor(BufferedImage image, int x, int y, int squareSize, int width, int height) {
         int sumR = 0, sumG = 0, sumB = 0;
