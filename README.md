@@ -56,13 +56,13 @@ Acts as program entry point, coordinates all components and manages workflow.
 
 2. [ImageProcessor](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/models/ImageProcessor.java) class handles the core image processing:
 
-    - Takes an image section (defined by startY to endY)
-    - Processes image in square blocks
-    For each block:
-    - Calculates average color
-    - Fills block with that color
-    - Saves progress
-    - Updates display
+    1. Takes an image section (defined by startY to endY)
+    2. Processes image in square blocks
+        For each block:
+            1. Calculates average color
+            2. Fills block with that color
+            3. Saves progress
+            4. Updates display
 
 Implements Runnable for multi-threading support
 
