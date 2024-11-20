@@ -34,7 +34,7 @@ src/
 
 ## Components
 
-[Main](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/Main.java) class - core application flow:
+1. [Main](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/Main.java) class - core application flow:
 
 1. Input Handling:
 - Validates 3 arguments: filename, square size, mode (S/M)
@@ -60,7 +60,7 @@ src/
 
 Acts as program entry point, coordinates all components and manages workflow.
 
-[ImageProcessor](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/models/ImageProcessor.java) class handles the core image processing:
+2. [ImageProcessor](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/models/ImageProcessor.java) class handles the core image processing:
 
 - Takes an image section (defined by startY to endY)
 - Processes image in square blocks
@@ -79,7 +79,7 @@ Key parameters:
 3. squareSize: Block size
 4. startY/endY: Section boundaries
 
-[DisplayUtils](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/utils/DisplayUtils.java) handles the GUI display:
+3. [DisplayUtils](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/utils/DisplayUtils.java) handles the GUI display:
  
 - getScaledDimension: Calculates image size to fit screen (80% of screen size)
 - createMainFrame: Creates window with proper layout & border
@@ -90,7 +90,7 @@ Key parameters:
 3. Triggers repaint
 Provides real-time visual feedback of image processing
 
-[ImageUtils](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/utils/ImageUtils.java) provides core image handling functions:
+4. [ImageUtils](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/utils/ImageUtils.java) provides core image handling functions:
 
 - loadImage: Reads image file from disk
 - saveImage: Saves processed image as JPG
@@ -101,7 +101,7 @@ Provides real-time visual feedback of image processing
 3. Returns average color for that block
 Handles image I/O and color calculations for the pixel averaging process.
 
-[LoggerUtils](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/utils/LoggerUtils.java) provides error logging functionality:
+5. [LoggerUtils](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/utils/LoggerUtils.java) provides error logging functionality:
 
 - Creates and configures a logger to write to "imageprocessor.log"
 - Uses FileHandler for file output
@@ -109,7 +109,7 @@ Handles image I/O and color calculations for the pixel averaging process.
 - Offers static getLogger() method for accessing logger throughout application
 Centralizes error tracking and debugging information.
 
-[ThreadUtils](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/utils/ThreadUtils.java) manages multi-threaded image processing:
+6. [ThreadUtils](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/utils/ThreadUtils.java) manages multi-threaded image processing:
 
 1. Gets number of available CPU cores
 2. Divides image into horizontal sections based on core count
