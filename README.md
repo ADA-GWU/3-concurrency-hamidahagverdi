@@ -144,21 +144,6 @@ Parameters:
 - `square_size`: Size of the averaging square in pixels (e.g., 20)
 - `mode`: Processing mode - 'S' for single-threaded or 'M' for multi-threaded
 
-Example input:
-```
-resources/images/monalisa.jpg 20 S
-resources/images/monalisa.jpg 20 M
-```
-- resources/images/monalisa.jpg - Image file path
-- 20 - Pixel averaging block size
-- S/M - Processing mode: Single-threaded/Multi-threaded Mode
-
-## Output
-
-- Processed image is saved as "result.jpg" in the working directory
-- Live preview is shown in a GUI window
-- Processing logs are written to "imageprocessor.log"
-
 ## Processing Modes
 
 ### Single-threaded Mode (S)
@@ -172,6 +157,20 @@ resources/images/monalisa.jpg 20 M
 - Faster processing for larger images
 - Divides image into sections for parallel processing
 - Real-time concurrent updates
+
+## Input:
+```
+resources/images/monalisa.jpg 20 S
+```
+- resources/images/monalisa.jpg - Image file path
+- 20 - Pixel averaging block size
+- S/M - Processing mode: Single-threaded/Multi-threaded Mode
+
+## Output
+- Processed image is saved as "result.jpg" in the working directory
+- Live preview is shown in a GUI window
+- Processing logs are written to "imageprocessor.log"
+
 
 ### Results
 
