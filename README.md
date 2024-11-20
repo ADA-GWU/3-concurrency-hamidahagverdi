@@ -164,7 +164,7 @@ resources/images/monalisa.jpg 20 S
 - resources/images/monalisa.jpg - Image file path
 - 20 - Pixel averaging block size
 - S/M - Processing mode: Single-threaded/Multi-threaded Mode
-![Example Input](resources/images/input_m.png)
+![Example Input](resources/images/example_input.png)
 
 ## Output
 - Processed image is saved as "result.jpg" in the working directory
