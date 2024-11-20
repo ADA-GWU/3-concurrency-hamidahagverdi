@@ -50,6 +50,7 @@ javac -d out src/Main.java src/models/*.java src/utils/*.java
 #Run
 java -cp out src.Main resources/images/monalisa.jpg 20 M
 ```
+## Input
 
 Parameters:
 - `filename`: Path to your image file (e.g., "image.jpg")
