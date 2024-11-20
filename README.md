@@ -67,11 +67,10 @@ src/
 ** Implements Runnable for multi-threading support
 
 Key parameters:
-
-1. **image**: Image to process
-2. **label**: GUI display element
-3. **squareSize**: Block size
-4. **startY/endY**: Section boundaries
+**image**: Image to process
+**label**: GUI display element
+**squareSize**: Block size
+**startY/endY**: Section boundaries
 
 3. [DisplayUtils](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/utils/DisplayUtils.java) handles the GUI display:
     1. Scales image
