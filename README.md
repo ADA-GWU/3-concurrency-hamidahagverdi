@@ -117,13 +117,6 @@ Centralizes error tracking and debugging information.
     4. Each thread processes its section independently using ImageProcessor
 Enables parallel processing for faster image manipulation.
 
-**Example calculation:
-With 4 cores and 1000px height:
-    1. Thread 1: 0-250px
-    2. Thread 2: 250-500px
-    3. Thread 3: 500-750px
-    4. Thread 4: 750-1000px
-
 ## Installation
 
 1. Clone the repository:
