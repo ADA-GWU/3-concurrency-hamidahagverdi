@@ -64,6 +64,18 @@ Key parameters:
 3. Triggers repaint
 Provides real-time visual feedback of image processing
 
+[ImageUtils](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/utils/ImageUtils.java) provides core image handling functions:
+
+- loadImage: Reads image file from disk
+- saveImage: Saves processed image as JPG
+- calculateAverageColor: Calculates average RGB color within a square region:
+
+1. Takes coordinates and size
+2. Sums R,G,B values
+3. Returns average color for that block
+Handles image I/O and color calculations for the pixel averaging process.
+
+
 
 ## Installation
 
