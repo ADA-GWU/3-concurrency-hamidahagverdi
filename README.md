@@ -1,5 +1,5 @@
-# Concurrency
-A high-performance Java application for image processing using pixel averaging effects, featuring both single and multi-threaded processing with real-time visualization.
+# Task 3 - Concurrency
+This high-performance Java application demonstrates concurrent processing capabilities by implementing image manipulation tasks in both single and multi-threaded environments. The core functionality divides input images into configurable square blocks, computes the average color within each block through pixel analysis, and applies these averaged colors to create a processed output. What sets this application apart is its dual-mode processing approach: a single-threaded mode that sequentially processes the image blocks from top to bottom, and a multi-threaded mode that leverages parallel processing to handle multiple image sections simultaneously. Throughout the processing, users benefit from real-time visual feedback through an adaptive GUI display that automatically scales to accommodate various image dimensions. This implementation not only serves as a practical demonstration of concurrent programming principles but also provides insights into the performance benefits of parallel processing in computationally intensive tasks.
 
 ## Features
 
