@@ -67,6 +67,7 @@ src/
 ** Implements Runnable for multi-threading support
 
 Key parameters:
+
 **image**: Image to process
 **label**: GUI display element
 **squareSize**: Block size
