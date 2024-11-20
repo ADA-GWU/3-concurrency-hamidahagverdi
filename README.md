@@ -52,6 +52,20 @@ Key parameters:
 2. label: GUI display element
 3. squareSize: Block size
 4. startY/endY: Section boundaries
+
+[DisplayUtils](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/utils/DisplayUtils.java) handles the GUI display:
+ 
+- getScaledDimension: Calculates image size to fit screen (80% of screen size)
+- createMainFrame: Creates window with proper layout & border
+- updateDisplay: Updates display with current processing state:
+
+1. Scales image
+2. Updates GUI
+3. Triggers repaint
+
+
+
+Main purpose: Provides real-time visual feedback of image processing
 ## Installation
 
 1. Clone the repository:
