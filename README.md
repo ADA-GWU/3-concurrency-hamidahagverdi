@@ -137,12 +137,6 @@ javac -d out src/Main.java src/models/*.java src/utils/*.java
 #Run
 java -cp out src.Main resources/images/monalisa.jpg 20 M
 ```
-## Input
-
-Parameters:
-- `filename`: Path to your image file (e.g., "image.jpg")
-- `square_size`: Size of the averaging square in pixels (e.g., 20)
-- `mode`: Processing mode - 'S' for single-threaded or 'M' for multi-threaded
 
 ## Processing Modes
 
@@ -160,6 +154,11 @@ Parameters:
 
 ## Input:
 ```
+- `filename`: Path to your image file (e.g., "image.jpg")
+- `square_size`: Size of the averaging square in pixels (e.g., 20)
+- `mode`: Processing mode - 'S' for single-threaded or 'M' for multi-threaded
+
+Example for Single-Threaded mode:
 resources/images/monalisa.jpg 20 S
 ```
 - resources/images/monalisa.jpg - Image file path
