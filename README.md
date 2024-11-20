@@ -62,10 +62,9 @@ Key parameters:
 1. Scales image
 2. Updates GUI
 3. Triggers repaint
+Provides real-time visual feedback of image processing
 
 
-
-Main purpose: Provides real-time visual feedback of image processing
 ## Installation
 
 1. Clone the repository:
