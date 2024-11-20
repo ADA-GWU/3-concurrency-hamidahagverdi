@@ -60,10 +60,11 @@ Parameters:
 Example input:
 ```
 resources/images/monalisa.jpg 20 S
+resources/images/monalisa.jpg 20 M
 ```
 - resources/images/monalisa.jpg - Image file path
 - 20 - Pixel averaging block size
-- M - Processing mode:
+- S/M - Processing mode: Single-threaded/Multi-threaded Mode
 
 ## Output
 
