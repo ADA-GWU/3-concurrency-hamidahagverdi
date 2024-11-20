@@ -13,12 +13,6 @@ Smart Image Handling
 - Support for various image formats (JPG, PNG)
 - Customizable square size for pixel averaging
 
-## Requirements
-
-- Java Development Kit (JDK) 8 or higher
-- Minimum 2GB RAM (recommended)
-- Graphics support for GUI display
-
 ## Project Structure
 ```
 src/
@@ -117,7 +111,13 @@ Centralizes error tracking and debugging information.
     4. Each thread processes its section independently using ImageProcessor
 Enables parallel processing for faster image manipulation.
 
-## Installation
+## Requirements for running
+
+1. Java Development Kit (JDK) 8 or higher.
+2. Minimum 2GB RAM (recommended).
+3. Graphics support for GUI display.
+
+## Installation & Run
 
 1. Clone the repository:
 ```
