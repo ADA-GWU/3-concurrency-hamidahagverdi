@@ -75,6 +75,13 @@ Provides real-time visual feedback of image processing
 3. Returns average color for that block
 Handles image I/O and color calculations for the pixel averaging process.
 
+[LoggerUtils](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/utils/LoggerUtils.java) provides error logging functionality:
+
+- Creates and configures a logger to write to "imageprocessor.log"
+- Uses FileHandler for file output
+- Formats log entries with SimpleFormatter
+- Offers static getLogger() method for accessing logger throughout application
+Centralizes error tracking and debugging information.
 
 
 ## Installation
