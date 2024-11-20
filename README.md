@@ -52,7 +52,7 @@ src/
         - [x] Logs errors.
         - [x] Shows user-friendly messages.
 
-Acts as program entry point, coordinates all components and manages workflow.
+** Acts as program entry point, coordinates all components and manages workflow.
 
 2. [ImageProcessor](https://github.com/ADA-GWU/3-concurrency-hamidahagverdi/blob/main/src/models/ImageProcessor.java) class handles the core image processing:
 
@@ -64,7 +64,7 @@ Acts as program entry point, coordinates all components and manages workflow.
         - [x] Saves progress
         - [x] Updates display
 
-Implements Runnable for multi-threading support
+** Implements Runnable for multi-threading support
 
     Key parameters:
 
