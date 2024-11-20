@@ -39,20 +39,19 @@ src/
 - Takes an image section (defined by startY to endY)
 - Processes image in square blocks
 For each block:
-1. Calculates average color
-2. Fills block with that color
-3. Saves progress
-4. Updates display
-
+- Calculates average color
+- Fills block with that color
+- Saves progress
+- Updates display
 
 Implements Runnable for multi-threading support
 
 Key parameters:
 
-image: Image to process
-label: GUI display element
-squareSize: Block size
-startY/endY: Section boundaries
+1. image: Image to process
+2. label: GUI display element
+3. squareSize: Block size
+4. startY/endY: Section boundaries
 ## Installation
 
 1. Clone the repository:
