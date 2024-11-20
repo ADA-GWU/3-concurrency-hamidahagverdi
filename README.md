@@ -119,10 +119,10 @@ Enables parallel processing for faster image manipulation.
 
 **Example calculation:
 With 4 cores and 1000px height:
-Thread 1: 0-250px
-Thread 2: 250-500px
-Thread 3: 500-750px
-Thread 4: 750-1000px
+    Thread 1: 0-250px
+    Thread 2: 250-500px
+    Thread 3: 500-750px
+    Thread 4: 750-1000px
 
 ## Installation
 
