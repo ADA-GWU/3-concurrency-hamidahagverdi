@@ -1,23 +1,17 @@
-# Image Processing Application with Concurrency
-A robust Java application that processes images by applying pixel averaging effects with support for both single-threaded and multi-threaded processing. The application provides real-time visual feedback of the processing through a graphical user interface.
+# Concurrency
+A high-performance Java application for image processing using pixel averaging effects, featuring both single and multi-threaded processing with real-time visualization.
 
 ## Features
 
-- **Flexible Image Processing**
-  - Support for various image formats (JPG, PNG, etc.)
-  - Customizable square size for pixel averaging
-  - Real-time preview of processing effects
-  - Automatic scaling for large images (>1000px)
+Performance & Processing
+- Single-threaded (S): Sequential, memory-efficient processing
+- Multi-threaded (M): Parallel processing utilizing all CPU cores
 
-- **Processing Modes**
-  - Single-threaded processing (S)
-  - Multi-threaded processing (M) utilizing available CPU cores
-  
-- **Error Handling**
-  - Comprehensive error logging system
-  - File-based logging with `imageprocessor.log`
-  - User-friendly error messages
-  - Robust input validation
+Smart Image Handling
+- Automatic screen-size adaptation
+- Real-time preview of processing effects
+- Support for various image formats (JPG, PNG)
+- Customizable square size for pixel averaging
 
 ## Requirements
 
@@ -25,23 +19,34 @@ A robust Java application that processes images by applying pixel averaging effe
 - Minimum 2GB RAM (recommended)
 - Graphics support for GUI display
 
+## Project Structure
+src/
+├── Main.java                 # Application entry point
+├── models/
+│   └── ImageProcessor.java   # Core processing logic
+└── utils/
+    ├── DisplayUtils.java     # GUI handling
+    ├── ImageUtils.java       # Image operations
+    ├── LoggerUtils.java      # Logging system
+    └── ThreadUtils.java      # Thread management
+
 ## Installation
 
 1. Clone the repository:
 ```
-# Clone repository
+# Clone & Navigate
 git clone https://github.com/ADA-GWU/3-concurrency-hamidahagverdi.git
 cd 3-concurrency-hamidahagverdi
 ```
 2. Compile the Java file:
 ```
-# Create output directory and compile
+# Compile
 mkdir out
 javac -d out src/Main.java src/models/*.java src/utils/*.java
 ```
 3. Run the compiled program:
 ```
-#Usage
+#Run
 java -cp out src.Main resources/images/monalisa.jpg 20 M
 ```
 
@@ -54,12 +59,9 @@ Example input:
 ```
 resources/images/monalisa.jpg 20 S
 ```
-resources/images/monalisa.jpg - Input image path
-20 - Block size for processing
+resources/images/monalisa.jpg - Image file path
+20 - Pixel averaging block size
 M - Processing mode:
-
-M: Multi-threaded
-S: Single-threaded
 
 ## Output
 
@@ -70,14 +72,16 @@ S: Single-threaded
 ## Processing Modes Explained
 
 ### Single-threaded Mode (S)
-- Processes the image sequentially
-- Suitable for smaller images
-- More predictable memory usage
+- Sequential top-to-bottom processing
+- Optimal for smaller images
+- Consistent memory usage
+- Predictable processing pattern
 
 ### Multi-threaded Mode (M)
-- Automatically utilizes available CPU cores
+- Parallel processing across CPU cores
 - Faster processing for larger images
 - Divides image into sections for parallel processing
+- Real-time concurrent updates
 
 ### Results
 
